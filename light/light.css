@@ -16,8 +16,24 @@ body {
 };
 
 /*home page layout and styling*/
-.verticalBar {
-    height: 400px;
+/*image animation */
+p {
+    color: #f41d1d;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: red;
+}
+
+#imgOne {
+    background-image: url("./img/barOne.jpeg");
+}
+
+#imgTwo {
+    background-image: url("./img/barTwo.jpeg");
+}
+
+#imgThree {
+    background-image: url("./img/barThree.jpeg");
 }
 
 .imageContainer {
@@ -27,6 +43,14 @@ body {
     margin-left: 2%;
     float: left;
     border-radius: 50%;
+}
+
+.imageContainer:hover { 
+    border-radius: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all 1s ease-in;  
 }
 
 svg {
