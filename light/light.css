@@ -1,0 +1,80 @@
+/*initial overwrites and setup */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 200;
+}
+
+*:focus {
+    outline: 0;
+}
+
+:root{
+    --main-color: #f41d1d;
+};
+
+/*home page layout and styling*/
+.verticalBar {
+    height: 400px;
+}
+
+.imageContainer {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    margin-left: 2%;
+    float: left;
+    border-radius: 50%;
+}
+
+svg {
+    z-index: -10;
+    float: left;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#oaklen {
+    border-bottom: 1px dotted;
+}
+
+#oaklen:hover {
+    color: var(--main-color);
+    border-bottom: 1px dotted #f41d1d;
+}
+
+#home {
+    height: 80vh;
+    display: block;
+    text-align: left;
+}
+
+#headerBlock {
+    float: left;
+    width: 40%;
+}
+
+#centerHeader {
+    margin-top: 30vh;
+}
+
+h1,h2 {
+    margin: 0px;
+    margin-left: 3%;
+}
+
+h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 90px;
+    font-family: 'Actor', sans-serif; 
+}
+
+h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+    font-weight: 200;
+}
