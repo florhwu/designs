@@ -13,17 +13,10 @@ body {
 
 :root{
     --main-color: #f41d1d;
-};
+}
 
 /*home page layout and styling*/
 /*image animation */
-p {
-    color: #f41d1d;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: red;
-}
-
 #imgOne {
     background-image: url("./img/barOne.jpeg");
 }
@@ -40,17 +33,34 @@ p {
     height: 150px;
     width: 150px;
     overflow: hidden;
-    margin-left: 2%;
+    margin-left: 3%;
     float: left;
     border-radius: 50%;
+    box-shadow: 
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.1);
 }
 
 .imageContainer:hover { 
     border-radius: 50%;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
-    filter: gray;  /* For IE 6 - 9 */
-    -webkit-transition: all 1s ease-in;  
+/*    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);   
+    filter: gray; */
+    box-shadow: 
+        inset 0 0 0 60px rgba(255,255,255,0.7),
+        0 1px 2px rgba(0,0,0,0.1);
+    background-image: none;
+    background-color: black;
+    -webkit-transition: all .4s ease-in;  
+}
+
+.red {
+    color: #f41d1d;
+}
+
+.sessionBar {
+    width: 100%;
+    min-height: 70vh;
 }
 
 svg {
@@ -84,6 +94,18 @@ svg {
     margin-top: 30vh;
 }
 
+#graph {
+    width: 350px;
+    height: 350px;
+    float: left;
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 200px;
+    border-radius: 50%;
+    background-image: url("./img/infoOne.jpeg");
+}
+
 h1,h2 {
     margin: 0px;
     margin-left: 3%;
@@ -102,3 +124,111 @@ h2 {
     font-size: 30px;
     font-weight: 200;
 }
+
+h3 {
+    font-size: 50px;
+    max-width: 40%;
+    border-bottom: 10px solid rgba(0,0,0, 1);
+    padding: 15px;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+.info {
+    font-size: 20px;
+    width: 70vh;
+    height: 80vh;
+    padding: 20px;
+    margin: 20px;
+    float: left;
+}
+
+.cap {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-weight: 200;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 100px;
+    padding: 10px;
+    z-index: -10;
+}
+
+.cap:hover {
+    /*border: 1px solid black;*/
+}
+
+#session-two {
+    margin-top: 200px;
+    text-align: right;
+    height: 100vh;
+}
+
+#session-two > h3 {
+    width: 50%;
+    float: right;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#session-two  > p{
+    float: right;
+    clear: right;
+    text-align: right;
+}
+
+#img2 {
+    width: 350px;
+    height: 350px;
+    float: left;
+    background-color: #333;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 50%;
+    margin-left: 10%;
+    background-image: url("./img/infoTwo.jpeg");
+}
+
+form {
+    width: 75vh;
+    margin: 20px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 17px;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 12px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    resize: none;
+    font-size: 17px;
+}
+
+textarea:focus {
+    border: 3px solid #555;
+}
+
